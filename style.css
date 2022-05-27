@@ -144,3 +144,27 @@ select:valid {
     display: none;
   }
 }
+@media screen and (max-height: 850px) {
+  .register-form {
+    height: 80%;
+  }
+  .grad {
+    height: 80%;
+  }
+}
+@media screen and (max-height: 720px) {
+  .register-form {
+    height: 90%;
+  }
+  .grad {
+    height: 90%;
+  }
+}
+@media screen and (max-height: 620px) {
+  .register-form {
+    height: 99%;
+  }
+  .grad {
+    height: 99%;
+  }
+}
