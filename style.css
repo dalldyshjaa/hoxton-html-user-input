@@ -17,7 +17,6 @@ body {
   position: absolute;
   width: 25%;
   height: 69%;
-
   background: linear-gradient(45deg, #639deb, #b95ad7);
   z-index: -1;
   filter: blur(70px);
@@ -106,4 +105,42 @@ label {
 }
 .submit-button button span {
   font-size: 15px;
+}
+input:invalid {
+  background-color: rgba(255, 0, 0, 0.03);
+}
+select:invalid {
+  background-color: rgba(255, 0, 0, 0.03);
+}
+input:valid {
+  background-color: rgba(0, 255, 8, 0.158);
+}
+select:valid {
+  background-color: rgba(0, 255, 8, 0.158);
+}
+@media screen and (max-width: 1060px) {
+  .register-form {
+    width: 40%;
+  }
+  .grad {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .register-form {
+    width: 60%;
+  }
+  .grad {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .register-form {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .grad {
+    display: none;
+  }
 }
