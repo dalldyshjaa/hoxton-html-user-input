@@ -11,6 +11,16 @@ body {
   width: 100%;
   display: grid;
   place-items: center;
+  position: relative;
+}
+.grad {
+  position: absolute;
+  width: 25%;
+  height: 69%;
+
+  background: linear-gradient(45deg, #639deb, #b95ad7);
+  z-index: -1;
+  filter: blur(70px);
 }
 .register-form {
   display: grid;
@@ -26,7 +36,10 @@ body {
 }
 .top {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 21px;
+  font-size: 45px;
+  background: linear-gradient(to right, #639deb, #b95ad7);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .single-input-container {
   display: grid;
@@ -47,11 +60,14 @@ option {
   height: 40px;
   border: none;
   font-size: 17px;
+  outline: none;
+  padding-left: 5px;
 }
 
 label {
   font-family: sans-serif;
   font-size: 13px;
+  padding-left: 5px;
 }
 #text-area {
   padding-top: 10px;
